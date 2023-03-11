@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:crafting_table"
+    }
+  },
+  "result": {
+    "item": "reverse-crafting-table:table",
+    "count": 1
+  }
+}
