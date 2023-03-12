@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "me.duncanruns.reversecrafingtable.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "mixins": [
+    "CraftingTableBlockMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
