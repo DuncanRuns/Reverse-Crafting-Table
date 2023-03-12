@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "reverse-crafting-table:table"
+          "name": "minecraft:crafting_table"
         }
       ],
       "conditions": [
