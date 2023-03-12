@@ -3,6 +3,7 @@ package me.duncanruns.reversecrafingtable;
 import net.minecraft.block.BlockRenderType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.BlockWithEntity;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.screen.NamedScreenHandlerFactory;
@@ -52,5 +53,12 @@ public class ReverseCraftingTableBlock extends BlockWithEntity {
             }
         }
         return ActionResult.SUCCESS;
+    }
+
+    @Override
+    public void onBlockBreakStart(BlockState state, World world, BlockPos pos, PlayerEntity player) {
+        if (player.isSneaking()) {
+            world.setBlockState(pos, Blocks.CRAFTING_TABLE.getDefaultState());
+        }
     }
 }
